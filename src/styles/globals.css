@@ -319,7 +319,6 @@ body {
   grid-template-areas:
     "main"
     "footer";
-  grid-template-rows: 30fr 1fr;
   background-color: var(--background-color);
 
   -webkit-font-smoothing: antialiased;
@@ -1030,6 +1029,10 @@ img.override-image {
     width: 90%;
   }
 
+  #home-section h2 {
+    max-width: 95vw;
+  }
+
   #about-section {
     flex-direction: column;
     height: auto;
@@ -1167,10 +1170,6 @@ img.override-image {
 
   /* General Styling */
 
-  body {
-    /* For Footer */
-    grid-template-rows: 30fr 0.5fr;
-  }
 
   /* Navigation Bar */
 
@@ -1416,7 +1415,6 @@ img.override-image {
 
   footer {
     display: flex;
-    height: 100%;
     align-items: center;
     width: var(--central-width);
     letter-spacing: -0.5px;

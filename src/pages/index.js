@@ -1,6 +1,7 @@
 import Image from "next/image";
 import localFont from "next/font/local";
 import Head from "next/head";
+import Script from "next/script";
 
 // export default function Home() {
 //   return (
@@ -28,8 +29,8 @@ export default function Home() {
       <Head>
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="/scripts/script.js"></script>
       </Head>
+      <Script src="/scripts/script.js" />
       <main id="container">
         <div class="section-scroll-anchor" id="home"></div>
         <section id="home-section">
@@ -63,7 +64,7 @@ export default function Home() {
             <h2 class="text-between-line">My Skills</h2>
             <div class="line-around-text"></div>
           </div>
-          <p class="lg:mt-14">I&apos;m best at…</p>
+          <p class="mt-8 lg:mt-14">I&apos;m best at…</p>
           <div id="skills-section__best-skill">
             <figure class="skills-icon-figure">
               <Image
@@ -294,7 +295,6 @@ export default function Home() {
         </section>
       </main>
 
-      <footer>&copy; Marvel Orleans 2024</footer>
     </>
   );
 }
